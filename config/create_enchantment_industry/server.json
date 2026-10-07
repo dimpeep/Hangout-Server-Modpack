@@ -1,0 +1,431 @@
+{
+  "kinetics": {
+    "comment": "Parameters and abilities of kinetic mechanisms",
+    "deployerKillDropXp": {
+      "comment": "Whether Deployer-killed entities should drop experience.",
+      "value": true
+    },
+    "deployerKillXpScale": {
+      "comment": [
+        "Scale for experience dropped from Deployer-killed entities.",
+        "Default: 1.0",
+        "Range: 0.0 ~ 1.0"
+      ],
+      "value": 1.0
+    },
+    "deployerMineDropXp": {
+      "comment": "Whether Deployer-mined blocks should drop experience.",
+      "value": true
+    },
+    "deployerMineXpScale": {
+      "comment": [
+        "Scale for experience dropped from Deployer-mined blocks.",
+        "Default: 1.0",
+        "Range: 0.0 ~ 1.0"
+      ],
+      "value": 1.0
+    },
+    "deployerCollectXp": {
+      "comment": "Whether Deployers collect dropped experience as Nuggets of Experience.",
+      "value": true
+    },
+    "deployerMendItem": {
+      "comment": "Whether the Mending enchantment applies to Deployer-held items (Needs deployerCollectXp = true).",
+      "value": true
+    },
+    "deployerSweepAttack": {
+      "comment": "Whether Deployers can perform sweep attacks.",
+      "value": true
+    },
+    "crushingWheelKillDropXp": {
+      "comment": "Whether Crushing Wheel-killed entities should drop experience.",
+      "value": true
+    },
+    "crushingWheelKillDropXpChance": {
+      "comment": [
+        "Probability of Crushing Wheel-killed entities dropping experience.",
+        "Default: 0.3",
+        "Range: 0.0 ~ 1.0"
+      ],
+      "value": 0.3
+    },
+    "crushingWheelKillDropXpScale": {
+      "comment": [
+        "Scale for experience dropped from Crushing Wheel-killed entities.",
+        "Default: 0.34",
+        "Range: 0.0 ~ 1.0"
+      ],
+      "value": 0.34
+    },
+    "stressValues": {
+      "comment": "Fine tune the kinetic stats of individual components",
+      "v1": {
+        "impact": {
+          "comment": [
+            "[in Stress Units]",
+            "Configure the individual stress impact of mechanical blocks. This cost scales with speed."
+          ],
+          "mechanical_grindstone": 4.0,
+          "grindstone_drain": 4.0
+        },
+        "capacity": {
+          "comment": [
+            "[in Stress Units]",
+            "Configure how much stress a source can accommodate."
+          ]
+        }
+      }
+    },
+    "fluids": {
+      "comment": "Parameters and abilities of fluids and fluid operating components",
+      "experienceVaporizeOnPlacement": {
+        "comment": "Whether Liquid Experience will vaporize into Experience Orbs upon placement.",
+        "value": true
+      },
+      "printerFluidCapacity": {
+        "comment": [
+          "The amount of liquid a Printer can hold (mB).",
+          "[@cui:RequiresReload:server]",
+          "Default: 4000",
+          "Range: > 1000"
+        ],
+        "value": 4000
+      },
+      "enableWrittenBookPrinting": {
+        "comment": [
+          "If the printing of Written Books function of Printers should be enabled.",
+          "[@cui:RequiresReload:server]"
+        ],
+        "value": true
+      },
+      "enableEnchantedBookPrinting": {
+        "comment": [
+          "If the printing of Enchanted Books function of Printers should be enabled.",
+          "[@cui:RequiresReload:server]"
+        ],
+        "value": true
+      },
+      "enableCreateCopiableItemPrinting": {
+        "comment": [
+          "If the printing of Create's copiable items function of Printers should be enabled.",
+          "[@cui:RequiresReload:server]"
+        ],
+        "value": true
+      },
+      "enablePackagePatternPrinting": {
+        "comment": [
+          "If the changing package patterns function of Printers should be enabled.",
+          "[@cui:RequiresReload:server]"
+        ],
+        "value": true
+      },
+      "enablePackageAddressPrinting": {
+        "comment": [
+          "If the assigning package addresses function of Printers should be enabled.",
+          "[@cui:RequiresReload:server]"
+        ],
+        "value": true
+      },
+      "enableCustomNamePrinting": {
+        "comment": [
+          "If the assigning custom names function of Printers should be enabled.",
+          "[@cui:RequiresReload:server]"
+        ],
+        "value": true
+      },
+      "enableBannerPatternPrinting": {
+        "comment": [
+          "If the printing banner patterns function of Printers should be enabled.",
+          "[@cui:RequiresReload:server]"
+        ],
+        "value": true
+      },
+      "printingCustomNameAsItemName": {
+        "comment": "Whether printing custom names (displayed in italics) should instead print as as item names (displayed in non-italics).",
+        "value": false
+      },
+      "printingGenerationChange": {
+        "comment": [
+          "The generation change when copying Written Books; a value of 1 will prevent copying copy of copy",
+          "Default: -3",
+          "Range: -3 ~ 1"
+        ],
+        "value": -3
+      },
+      "printingEnchantedBookCostMultiplier": {
+        "comment": [
+          "The cost multiplier of printing Enchanted Books.",
+          "Default: 1.0",
+          "Range: 0.01 ~ 100.0"
+        ],
+        "value": 1.0
+      },
+      "printingEnchantedBookDenylistStopCopying": {
+        "comment": "Whether the Printer denylist prevents Enchanted Books from being copied.Setting this to false allows copying Enchanted Books without denied enchantments",
+        "value": true
+      },
+      "blazeEnchanterFluidCapacity": {
+        "comment": [
+          "The amount of liquid a Blaze Enchanter can hold (mB).",
+          "[@cui:RequiresReload:server]",
+          "Default: 4000",
+          "Range: > 1000"
+        ],
+        "value": 4000
+      },
+      "blazeForgerFluidCapacity": {
+        "comment": [
+          "The amount of liquid a Blaze Forger can hold (mB).",
+          "[@cui:RequiresReload:server]",
+          "Default: 4000",
+          "Range: > 1000"
+        ],
+        "value": 4000
+      },
+      "experienceLanternFluidCapacity": {
+        "comment": [
+          "The amount of liquid an Experience Lantern can hold (mB).",
+          "[@cui:RequiresReload:server]",
+          "Default: 1000",
+          "Range: > 100"
+        ],
+        "value": 1000
+      },
+      "experienceLanternDrainRate": {
+        "comment": [
+          "The amount of experience an Experience Lantern can drain from player per 0.5 ticks (mB).",
+          "Default: 50",
+          "Range: > 1"
+        ],
+        "value": 50
+      },
+      "experienceLanternPullToggle": {
+        "comment": "Whether the Experience Lantern will pull in experience orbs from nearby.",
+        "value": true
+      },
+      "experienceLanternPullRadius": {
+        "comment": [
+          "The range at which experience orbs will be pulled into the lantern.",
+          "Default: 10",
+          "Range: > 0"
+        ],
+        "value": 10
+      },
+      "experienceLanternPullForceMultiplier": {
+        "comment": [
+          "Modifier for the amount of force with which to pull the experience orbs.",
+          "Default: 0.075",
+          "Range: 0.0 ~ 0.5"
+        ],
+        "value": 0.075
+      },
+      "mechanicalGrindstoneFluidCapacity": {
+        "comment": [
+          "The amount of liquid a Grindstone Drain can hold (mB).",
+          "[@cui:RequiresReload:server]",
+          "Default: 1000",
+          "Range: > 5000"
+        ],
+        "value": 5000
+      }
+    },
+    "enchantments": {
+      "comment": "Parameters and abilities of enchantment operating components",
+      "blazeEnchanterMaxEnchantLevel": {
+        "comment": [
+          "The max experience level a Blaze Enchanter can use in Regular Enchanting",
+          "Default: 30",
+          "Range: > 0"
+        ],
+        "value": 30
+      },
+      "blazeEnchanterMaxSuperEnchantLevel": {
+        "comment": [
+          "The max experience level a Blaze Enchanter can use in Super Enchanting",
+          "Default: 60",
+          "Range: > 0"
+        ],
+        "value": 60
+      },
+      "blazeEnchanterBlockedLightningCurseChance": {
+        "comment": [
+          "Chance per curse roll for blocked-lightning Super Enchanting to add an applicable curse to the result",
+          "Default: 0.5",
+          "Range: 0.0 ~ 1.0"
+        ],
+        "value": 0.5
+      },
+      "blazeEnchanterBlockedLightningCurseCount": {
+        "comment": [
+          "Maximum curse rolls for blocked-lightning Super Enchanting",
+          "Default: 1",
+          "Range: 0 ~ 16"
+        ],
+        "value": 1
+      },
+      "blazeEnchanterBlockedLightningCurseMaxLevel": {
+        "comment": [
+          "Maximum curse level blocked-lightning Super Enchanting can add",
+          "Default: 1",
+          "Range: 1 ~ 255"
+        ],
+        "value": 1
+      },
+      "blazeEnchanterMaxLevelExtension": {
+        "comment": [
+          "Max enchantment level in Super Enchanting will be extended by this value when no per-enchantment processing rule exists",
+          "Default: 1",
+          "Range: 0 ~ 255"
+        ],
+        "value": 1
+      },
+      "blazeForgerMaxLevelExtension": {
+        "comment": [
+          "Max enchantment level in Super Forging will be extended by this value when no per-enchantment processing rule exists",
+          "Default: 1",
+          "Range: 0 ~ 255"
+        ],
+        "value": 1
+      },
+      "ignoreEnchantmentCompatibility": {
+        "comment": "If Super Enchanting and Super Forging ignores enchantment compatibility",
+        "value": true
+      },
+      "extractEnchantmentRespectLevelExtension": {
+        "comment": "If Enchantment extraction respects over-capped level",
+        "value": false
+      }
+    },
+    "processing": {
+      "comment": "Parameters and abilities of processing mechanisms and appliances",
+      "regularLightningStrikeTransformXpBlockChance": {
+        "comment": [
+          "Probability of natural lightning strikes transforming Blocks of Experience.",
+          "Default: 1.0",
+          "Range: 0.0 ~ 1.0"
+        ],
+        "value": 1.0
+      },
+      "classicBlazeEnchanterFluidCapacity": {
+        "comment": [
+          "The amount of liquid a Classic Blaze Enchanter can hold (mB).",
+          "Default: 4000",
+          "Range: > 1000"
+        ],
+        "value": 4000
+      },
+      "classicBlazeEnchanterNormalEnchantingCostCoefficient": {
+        "comment": [
+          "Experience cost coefficient of Classic Blaze Enchanter regular enchanting.",
+          "Default: 1.0",
+          "Range: 0.01 ~ 3.4028235E38"
+        ],
+        "value": 1.0
+      },
+      "classicBlazeEnchanterSuperEnchantingCostCoefficient": {
+        "comment": [
+          "Experience cost coefficient of Classic Blaze Enchanter super enchanting.",
+          "Default: 1.0",
+          "Range: 0.01 ~ 3.4028235E38"
+        ],
+        "value": 1.0
+      },
+      "classicBlazeEnchanterSuperEnchantingCurseLevelDroppingRate": {
+        "comment": [
+          "Probability that a cursed Classic Blaze Enchanter super enchants resulting in a drop in enchantment level.",
+          "Default: 0.25",
+          "Range: 0.01 ~ 3.4028235E38"
+        ],
+        "value": 0.25
+      },
+      "blazeEnchanterNormalEnchantingCostMultiplier": {
+        "comment": [
+          "Global experience cost multiplier for regular Blaze Enchanter operations.",
+          "Default: 1.0",
+          "Range: 0.0 ~ 3.4028235E38"
+        ],
+        "value": 1.0
+      },
+      "blazeEnchanterSuperEnchantingCostMultiplier": {
+        "comment": [
+          "Global experience cost multiplier for Super Blaze Enchanter operations.",
+          "Default: 1.0",
+          "Range: 0.0 ~ 3.4028235E38"
+        ],
+        "value": 1.0
+      },
+      "blazeEnchanterDirectEnchantingCostMultiplier": {
+        "comment": [
+          "Experience cost multiplier for direct Blaze Enchanter operations on items and books.",
+          "Default: 1.0",
+          "Range: 0.0 ~ 3.4028235E38"
+        ],
+        "value": 1.0
+      },
+      "blazeEnchanterTemplateEnchantingCostMultiplier": {
+        "comment": [
+          "Experience cost multiplier for Blaze Enchanter operations that write enchantments into templates.",
+          "Default: 1.0",
+          "Range: 0.0 ~ 3.4028235E38"
+        ],
+        "value": 1.0
+      },
+      "blazeForgerNormalForgingCostMultiplier": {
+        "comment": [
+          "Global experience cost multiplier for regular Blaze Forger operations.",
+          "Default: 1.0",
+          "Range: 0.0 ~ 3.4028235E38"
+        ],
+        "value": 1.0
+      },
+      "blazeForgerSuperForgingCostMultiplier": {
+        "comment": [
+          "Global experience cost multiplier for Super Blaze Forger operations.",
+          "Default: 1.0",
+          "Range: 0.0 ~ 3.4028235E38"
+        ],
+        "value": 1.0
+      },
+      "blazeForgerMergeCostMultiplier": {
+        "comment": [
+          "Experience cost multiplier for Blaze Forger merge operations.",
+          "Default: 1.0",
+          "Range: 0.0 ~ 3.4028235E38"
+        ],
+        "value": 1.0
+      },
+      "blazeForgerApplyCostMultiplier": {
+        "comment": [
+          "Experience cost multiplier for Blaze Forger apply operations.",
+          "Default: 1.0",
+          "Range: 0.0 ~ 3.4028235E38"
+        ],
+        "value": 1.0
+      },
+      "blazeForgerExtractCostMultiplier": {
+        "comment": [
+          "Experience cost multiplier for Blaze Forger extract operations.",
+          "Default: 1.0",
+          "Range: 0.0 ~ 3.4028235E38"
+        ],
+        "value": 1.0
+      },
+      "blazeForgerConflictExtraLevelCost": {
+        "comment": [
+          "Extra level cost added when Super Forging ignores an enchantment conflict.",
+          "Default: 1",
+          "Range: > 0"
+        ],
+        "value": 1
+      },
+      "blazeForgerDurabilityRepairLevelCost": {
+        "comment": [
+          "Level cost added when Blaze Forger repairs item durability during merge.",
+          "Default: 2",
+          "Range: > 0"
+        ],
+        "value": 2
+      }
+    }
+  }
+}

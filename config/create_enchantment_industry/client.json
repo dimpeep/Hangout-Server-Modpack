@@ -1,0 +1,10 @@
+{
+  "experienceVisionMultiplier": {
+    "comment": [
+      "The vision range through Liquid Experience will be multiplied by this factor",
+      "Default: 1.0",
+      "Range: 1.0 ~ 256.0"
+    ],
+    "value": 1.0
+  }
+}
