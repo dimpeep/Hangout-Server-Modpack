@@ -1,0 +1,9 @@
+# ignore everything by default
+/*
+
+# Only track essential files
+!.gitignore
+!config/
+!resourcepacks/
+!shaderpacks/
+!icon.png
